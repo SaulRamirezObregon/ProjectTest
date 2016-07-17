@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="Estilos.css">
+	<script src="Operaciones.js"></script>
+</head>
+<body>
+	
+
+<form >
+<label for="">Coloca el primer Valor:</label>
+<input type="text" placeholder="Primer numero" id="a">
+<label for="">Coloca el segundo Valor:</label>
+<input type="text" placeholder="Segundo numero" id="b">
+
+
+<input type="button" value="sumar" onclick="sumar( parseFloat(document.getElementById('a').value) , parseFloat(document.getElementById('b').value) )">
+
+<input type="button" value="restar" onclick="restar( parseFloat(document.getElementById('a').value) , parseFloat(document.getElementById('b').value) )">
+
+<input type="button" value="dividir"onclick="dividir( parseFloat(document.getElementById('a').value) , parseFloat(document.getElementById('b').value) )">
+
+<input type="button" value="multiplicar"onclick="multiplicar( parseFloat(document.getElementById('a').value) , parseFloat(document.getElementById('b').value) )">
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora con JS</title>
+	<link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+	<script>
+		
+		var sumar = function( primerNumero , segundoNumero  )
+		{
+
+			var resultado = primerNumero + segundoNumero;
+			alert(resultado);
+			return resultado;
+		}
+
+		var restar = function( primerNumero , segundoNumero  )
+		{
+
+			var resultado = primerNumero - segundoNumero;
+			alert(resultado);
+			return resultado;
+		}
+
+		var dividir = function( primerNumero , segundoNumero  )
+		{
+
+			var resultado = primerNumero / segundoNumero;
+			alert(resultado);
+			return resultado;
+		}
+
+		var multiplicar = function( primerNumero , segundoNumero  )
+		{
+
+			var resultado = primerNumero * segundoNumero;
+			alert(resultado);
+			return resultado;
+		}
+
+		
+
+     
+	</script>
+
+
+
+<form action="" id="Formulario">
+<h1> <center>Calculadora con JS</center> </h1>
+
+<div id="Bloque">
+
+<input type="text" placeholder="Primer numero" id="a">
+<input type="text" placeholder="Segundo numero" id="b">
+
+<br>
+<input type="button" value="sumar" onclick="sumar( parseFloat(document.getElementById('a').value) , parseFloat(document.getElementById('b').value) )">
+
+<input type="button" value="restar" onclick="restar( parseFloat(document.getElementById('a').value) , parseFloat(document.getElementById('b').value) )">
+
+<input type="button" value="dividir"onclick="dividir( parseFloat(document.getElementById('a').value) , parseFloat(document.getElementById('b').value) )">
+
+<input type="button" value="multiplicar"onclick="multiplicar( parseFloat(document.getElementById('a').value) , parseFloat(document.getElementById('b').value) )">
+
+</div>
+</form>
+
+
+</body>
+</html>
