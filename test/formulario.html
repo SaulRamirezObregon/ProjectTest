@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VALIDACION DE FORMULARIOS</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div id="cabecera">
+		Formulario
+	</div>
+	<div id="contenido">
+		<form name="formulario" id="formulario" action="save.html" >
+&nbsp;&nbsp;Nombre: <input id="txtnombre" class="txt" type="text" name="nombreclient" placeholder="Escribe tu nombre..." /><br/>
+&nbsp;&nbsp;Apellidos: <input id="txtapellidos" type="text" class="txt" name="apellidos" placeholder="Escribe tu apellido paterno y materno..." /><br/>
+&nbsp;&nbsp;Dirección: <input id="txtdireccion" type="text" class="txt" name="direccion" placeholder="Escribe tu dirección completa..." /><br/>
+&nbsp;&nbsp;Correo electrónico: <input id="txtemail" type="text" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required="required" class="txt" name="correo" placeholder="Escribe tu correo personal..." /><br/>
+&nbsp;&nbsp;Teléfono: <input id="txtelefono" type="text" class="txt" name="telefono" placeholder="Escribe tu número telefónico..." /><br/>
+
+<div style="margin-top:20px;">
+&nbsp;&nbsp;Sexo:
+<input type="radio" name="sexo" value="male" > Masculino  
+<input type="radio" name="sexo" value="female"> Femenino<br>
+</div>
+
+<div style="margin-top:20px;">
+&nbsp;&nbsp;Estado civil:
+<select id="cmbestadocivil" name="estadocivil">
+    <option value="0">SELECCIONAR</option>
+    <option value="1">Soltero</option>
+    <option value="2">Casado</option>
+    <option value="3">Divorciado</option>
+  </select>
+  </div>
+
+<div style="margin-top:20px;">
+ &nbsp;&nbsp;Comentario:
+ <br/>
+  &nbsp;&nbsp;<textarea id="txtcomentarios" cols="10" rows="5" name="sugerencias" placeholder="Escriba aquí su comentario..."></textarea>
+</div>
+
+<br/>
+<input type="submit" class="botones" value="Registrar">
+
+		</form>
+	</div>
+</body>
+</html>
